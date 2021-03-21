@@ -1,4 +1,4 @@
-package com.example.health;
+package com.example.health.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,20 +9,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Test1 extends Fragment {
+import com.example.health.R;
 
-    public Test1 () {}
+public class ExerciseRankFragment extends Fragment {
 
-    public static Test1 newInstance() {
-        Test1 test1= new Test1();
+    public ExerciseRankFragment(){}
+
+    public static ExerciseRankFragment newInstance() {
+        ExerciseRankFragment exerciseRankFragment = new ExerciseRankFragment();
         Bundle bundle = new Bundle();
-        return test1;
+        return exerciseRankFragment;
     }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment1, container, false);
+        View view = inflater.inflate(R.layout.fragment_exercise_report, container, false);
         return view;
     }
 }

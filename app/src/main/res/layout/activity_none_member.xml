@@ -51,6 +51,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="15dp"
+                        android:textColorHint="@color/blue_007"
                         android:textColor="@android:color/background_dark"
                         android:fontFamily="@font/gmarketsanslight"
                         android:includeFontPadding="false"
@@ -58,6 +59,8 @@
                         android:gravity="center|start"
                         android:maxLines="1"
                         android:imeOptions="actionDone"
+                        android:inputType="textNoSuggestions|textVisiblePassword"
+                        android:paddingStart="15px"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="50dp"/>
 
@@ -79,18 +82,13 @@
                         android:includeFontPadding="false"
                         android:textColor="@color/blue_007"/>
 
-                    <EditText
+                    <Spinner
                         android:id="@+id/insert_sex"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:textSize="15dp"
                         android:textColor="@android:color/background_dark"
-                        android:fontFamily="@font/gmarketsanslight"
-                        android:includeFontPadding="false"
                         android:background="@drawable/linebox"
-                        android:gravity="center|start"
-                        android:maxLines="1"
-                        android:imeOptions="actionDone"
                         android:layout_marginStart="25dp"
                         android:layout_marginEnd="50dp"/>
 
@@ -117,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="15dp"
+                        android:textColorHint="@color/blue_007"
                         android:textColor="@android:color/background_dark"
                         android:fontFamily="@font/gmarketsanslight"
                         android:includeFontPadding="false"
@@ -124,6 +123,8 @@
                         android:gravity="center|start"
                         android:maxLines="1"
                         android:imeOptions="actionDone"
+                        android:paddingStart="15px"
+                        android:inputType="textNoSuggestions|textVisiblePassword"
                         android:layout_marginStart="25dp"
                         android:layout_marginEnd="50dp"/>
 
@@ -135,6 +136,7 @@
         </ScrollView>
 
         <RelativeLayout
+            android:id="@+id/start_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
